@@ -17,14 +17,17 @@
 // STEP 1: Create an array called "colors" with exactly
 //         three strings: "red", "green", "blue"
 //         Use let to declare it.
-
+let colors = ["red", "green", "blue"];
 // STEP 2: Use a for loop to print each color.
 //         Each line should say exactly:
 //         "Color: red"
 //         "Color: green"
 //         "Color: blue"
 //         Use: console.log("Color: " + colors[i])
-
+for(i=0; i<colors.length; i++)
+{
+    console.log("Color: " + colors[i])
+}
 
 // ============================================
 //  MAIN: Number Analyzer
@@ -34,13 +37,16 @@
 
 // STEP 3: Create an empty array called "numbers" using let.
 //         let numbers = [];
-
+let numbers = [];
 // STEP 4: Use a for loop that runs 5 times (i = 0 to 4).
 //         Inside the loop:
 //         a) Use prompt() to ask "Enter number " + (i + 1)
 //         b) Use parseFloat() to convert the input to a number
 //         c) Use .push() to add the number to the array
-
+for(i=0; i<=4; i++) {
+    parseFloat(prompt("Enter number " + (i+1)))
+    numbers.push(i)
+}
 // STEP 5: Print all the numbers on one line.
 //         Build a string by looping through the array.
 //         Separate each number with ", " (comma and space).
@@ -50,6 +56,7 @@
 //         HINT: Start with an empty string. In the loop,
 //         add the number. If it's not the last number,
 //         also add ", " after it.
+let string = [];
 
 // STEP 6: Calculate the sum of all numbers.
 //         Use a for loop to add each number to a running total.
